@@ -1,0 +1,14 @@
+<h4 class="mb-3">Kitap Listesi</h4>
+<table ng-table="tableParams" class="table" show-filter="true">
+    <tr ng-repeat="book in $data" ng-click="detailBook(book.id)">
+        <td title="'Kitap Adı'" filter="{ name: 'text'}" sortable="'name'">
+            {{book.name}}
+        </td>
+        <td title="'Yazar'" filter="{ author: 'text'}" sortable="'author'">
+            {{book.author}}
+        </td>
+        <td title="'Yayın Evi'" filter="{ publisher: 'text'}" sortable="'publisher'">
+            {{book.publisher}}
+        </td>
+    </tr>
+</table>

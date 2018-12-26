@@ -1,0 +1,25 @@
+<h4 class="mb-3">Yeni Kitap</h4>
+<hr/>
+<form>
+    <div class="form-group">
+        <label for="name">Kitap Adı</label>
+        <input type="text" class="form-control" id="name" ng-model="data.name">
+    </div>
+
+    <div class="form-group">
+        <label for="author">Yazar</label>
+        <input type="text" class="form-control" id="author" ng-model="data.author">
+    </div>
+
+    <div class="form-group">
+        <label for="publisher">Yayınevi</label>
+        <input type="text" class="form-control" id="publisher" ng-model="data.publisher">
+    </div>
+
+    <div class="form-group">
+        <label for="releaseYear">Basım Tarihi</label>
+        <input type="text" class="form-control" id="releaseYear" ng-model="data.releaseYear">
+    </div>
+
+    <button type="button" class="btn btn-primary" ng-click="save()">Ekle</button>
+</form>
